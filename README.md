@@ -2,7 +2,7 @@
 
 <br>
 
-## 📌 [과제1 :: 지라 번호 입력, 링크 생성, 이동]()
+## 📌 [과제1 :: 지라 번호 입력, 링크 생성, 이동](https://github.com/mireyhgnay/fe-onboarding/tree/main/study/src/00_study)
 > 지라 번호 입력하고 버튼 누르면 링크를 만들어주는 페이지입니다. + Webpack 설치
 
 <br>
@@ -25,7 +25,7 @@
 
 <br>
 
-## 📌 [과제2 :: fetch api로 데이터를 가져와 목록 보여주기]()
+## 📌 [과제2 :: fetch api로 데이터를 가져와 목록 보여주기](https://github.com/mireyhgnay/fe-onboarding/tree/main/study/src/01_study)
 > 여러 프로젝트를 관리하기 위한 webpack 재설정
 
 <br>
