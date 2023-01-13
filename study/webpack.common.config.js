@@ -1,9 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const folderName = '01_study';
 
 module.exports = {
   entry: { // webpack bundler 에 누가 참여할건지?
-    ['main.bundle']: path.resolve(__dirname, 'src', 'index.js'),
+    ['main.bundle']: path.resolve(__dirname, 'src', folderName, 'index.js'),
   },
   module: {
     rules: [
@@ -17,7 +18,7 @@ module.exports = {
   },
   plugins: [
 		new HtmlWebpackPlugin({
-			template: path.resolve(__dirname, 'src', 'index.html'),
+			template: path.resolve(__dirname, 'src', folderName, 'index.html'),
 		}),
 	],
 };
