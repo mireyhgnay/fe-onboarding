@@ -10,19 +10,23 @@ const clickEvent = () => {
     const jiraLinkOrigin = "https://jira.tmon.co.kr/browse/";
 
     // DOM 추가
-    const jiraLink = document.createElement('a'); 
+    const jiraLinkTag = document.createElement('a');
+    jiraLinkTag.setAttribute('class', 'jira_link');
+    const jiraLink = document.querySelector('.jira_link');
 
-    // DOM 속성 지정
-    jiraLink.setAttribute('class', 'jira_link'); // 클래스명 설정
-    jiraLink.setAttribute('href', jiraLinkOrigin + jiraInput); // 링크 설정
-    jiraLink.innerHTML = jiraInput;
+    if(jiraLink) { // .jira_link 가 있는 경우, 링크 & 텍스트만 변경
+        jiraLink.href = jiraLinkOrigin + jiraInput;
+        jiraLink.innerHTML = jiraInput;
+    } else { // .jira_link 가 없는 경우, 새로 돔 추가 및 생성
+        jiraLinkTag.setAttribute('href', jiraLinkOrigin + jiraInput);
+        jiraLinkTag.innerHTML = jiraInput;
 
-    // 기존 돔 안에 생성된 a태그 추가
-    jiraLinkArea.appendChild(jiraLink);
+        jiraLinkArea.appendChild(jiraLinkTag);
+    }
 
     // 지라링크 재활용
-    const replaceLink = document.querySelector('.jira_link'); 
-    replaceLink.parentNode.replaceChild(jiraLink, replaceLink);
+    // const replaceLink = document.querySelector('.jira_link'); 
+    // replaceLink.parentNode.replaceChild(jiraLink, replaceLink);
 }
 
 // 버튼 이벤트

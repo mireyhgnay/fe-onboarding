@@ -25,6 +25,15 @@
 
 <br>
 
+**👩🏻‍💻 npm start**
+```bash
+$ cd study
+$ npm run prod // bundling
+$ npm start    // build
+```
+
+<br>
+
 ## 📌 [과제2 :: fetch api로 데이터를 가져와 목록 보여주기](https://github.com/mireyhgnay/fe-onboarding/tree/main/study/src/01_study)
 > 여러 프로젝트를 관리하기 위한 webpack 재설정
 

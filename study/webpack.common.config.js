@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const folderName = '01_study';
+const folderName = '00_study'; // 로컬에서 확인할 폴더명으로 변경
 
 module.exports = {
   entry: { // webpack bundler 에 누가 참여할건지?
