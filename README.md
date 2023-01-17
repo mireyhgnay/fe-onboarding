@@ -1,4 +1,8 @@
-# <div align="center">🐣 FE Onboarding Study</div>
+<div align="center">
+  <img width="200px;" src="./images/img_onboarding.png"/>
+</div>
+<h2 align="center">🐣 FE Onboarding Study</h2>
+<p align="center">Vanilla JavaScript를 위한 온보딩 과제</p>
 
 <br>
 
