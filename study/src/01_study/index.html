@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fetch api로 데이터를 가져와 목록 보여주기</title>
+    <title>Jira Board</title>
 </head>
 <body>
-    
+    <section class="jira_box">
+        <h1 class="jira_text">지라 칸반보드</h1>
+        <input type="text" id="number" class="jira_input" placeholder="지라 번호">
+        <input type="text" id="text" class="jira_input" placeholder="지라 설명">
+        <button type="button" class="jira_button">추가하기</button>
+    </section>
+    <section class="jira_board">
+        <div class="board todo"></div>
+        <div class="board dev"></div>
+        <div class="board qa"></div>
+        <div class="board end"></div>
+    </section>
 </body>
 </html>

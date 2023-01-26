@@ -10,10 +10,10 @@ module.exports = {
     ],
     devServer: {
         open: true,
-        hot: true,
+        hot: true, // 브라우저 새로고침 안해도 변경된 모듈 자동으로 적용
         static: {
-            directory: path.join(__dirname, 'assets'), // 실제 정적 파일 경로
-            publicPath: '/static', // 서버 정적 파일 경로
+            directory: path.join(__dirname, 'dist'), // 실제 정적 파일 경로
+            publicPath: '/assets', // 서버 정적 파일 경로
         }
     },
 };

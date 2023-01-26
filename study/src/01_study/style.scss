@@ -1,7 +1,60 @@
 @import url("https://fonts.googleapis.com/css?family=Karla:weight@400;700&display=swap");
 
 $font: "Karla", sans-serif;
-
+ 
 body {
   font-family: $font;
+  margin: 0;
+  padding: 0;
+}
+
+.jira {
+  &_box {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    margin: 0 auto;
+  }//.jira_box
+
+  &_text {
+    font-size: 25px;
+    font-weight: bold;
+  }//.jira_text
+
+  &_input {
+    display: inline-block;
+    width: 250px;
+    height: 30px;
+    font-size: 16px;
+  }//.jira_input
+
+  &_button {
+    width: 100px;
+    height: 36px;
+    border: none;
+    background-color: cadetblue;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+  }//.jira_button
+
+  &_board {
+    display: flex;
+    width: 100%;
+
+    .board {
+      flex: 1;
+      padding: 10px;
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+
+    .card {
+      width: 100%;
+      min-width: 100px;
+      background-color: olive;
+    }
+  }//.jira_board
 }

@@ -23,10 +23,6 @@ const clickEvent = () => {
 
         jiraLinkArea.appendChild(jiraLinkTag);
     }
-
-    // 지라링크 재활용
-    // const replaceLink = document.querySelector('.jira_link'); 
-    // replaceLink.parentNode.replaceChild(jiraLink, replaceLink);
 }
 
 // 버튼 이벤트
