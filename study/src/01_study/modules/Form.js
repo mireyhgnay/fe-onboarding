@@ -1,13 +1,12 @@
-import addBoard from "./Board";
+import Card from "./Card";
 
-const jiraButton = document.querySelector('.jira_button');
-const jiraInput = document.querySelector('.jira_input');
-
-const createBoard = () => {
+// 카드 생성하기
+const createCard = ({ number, desc }) => {
     const todoBoard = document.querySelector('.board.todo');
-    todoBoard.append(addBoard({number}));
+    todoBoard.append(Card({ number, desc }));
 }
 
+// Form 클릭 이벤트
 const clickEvent = () => {
     const jiraNumber = document.getElementById('number');
     const jiraText = document.getElementById('text');
@@ -19,19 +18,20 @@ const clickEvent = () => {
         return alert('설명을 입력해주세요!');
     }
 
-    createBoard({
-        number : jiraNumber.value
+    // 지라번호 input값 number로 받아오기
+    createCard({
+        number : jiraNumber.value,
+        desc : jiraText.value,
     });
+
+    // input 값 초기화
+    jiraNumber.value = '';
+    jiraText.value = '';
 }
 
-// 버튼 클릭 이벤트
-jiraButton.addEventListener('click', clickEvent);
-
-// 엔터키 이벤트
-jiraInput.addEventListener('keyup', function(e){
-    if (e.keyCode === 13) {
-        clickEvent();
+export default {
+    init : () => {
+        const jiraButton = document.querySelector('.jira_button');
+        jiraButton.addEventListener('click', clickEvent);
     }
-});
-
-export default clickEvent; 
+}; 

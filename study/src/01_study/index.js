@@ -1,9 +1,9 @@
 import "./style.scss";
 
 import Form from './modules/Form';
-import Board from './modules/Board';
+import Drag from "./modules/Drag";
 
 window.onload = () => { 
   Form.init();
-  Board.init();
+  Drag.init();
 }
