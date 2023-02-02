@@ -5,5 +5,6 @@ import Drag from "./modules/Drag";
 
 window.onload = () => { 
   Form.init();
+  Form.create();
   Drag.init();
 }
